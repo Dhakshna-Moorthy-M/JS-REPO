@@ -1,0 +1,439 @@
+<!-- HTML code to display the stored payslip data -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payslip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+            <nav class="container">
+                <nav class="navbar navbar-expand-lg bg-dark ">
+                    <div class="container-md">
+                      <a class="navbar-brand text-white " href="#">Dotexes Employee Pay Slip</a>
+                    </div>
+                  </nav>
+            </nav>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Employee User : </span>
+                        <span class="form-control" aria-label="Sizing example input" id="empuser"   aria-describedby="inputGroup-sizing-default"></span>
+                      </div> 
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee Address : </span>
+                <span class="form-control" aria-label="Sizing example input" id="empadd"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee ID : </span>
+                <span class="form-control" aria-label="Sizing example input" id="empuid"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Employee Contact : </span>
+        <span class="form-control" aria-label="Sizing example input" id="empcon"   aria-describedby="inputGroup-sizing-default"></span>
+      </div> 
+    </div>
+    <div class="col-lg-6">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Employee Name : </span>
+            <span class="form-control" aria-label="Sizing example input" id="empname"   aria-describedby="inputGroup-sizing-default"></span>
+          </div> 
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Salary Date : </span>
+            <span class="form-control" aria-label="Sizing example input" id="empdate"   aria-describedby="inputGroup-sizing-default"></span>
+          </div> 
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">SSN : </span>
+            <span class="form-control" aria-label="Sizing example input" id="empssn"   aria-describedby="inputGroup-sizing-default"></span>
+          </div> 
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Mode Of Payment : </span>
+            <span class="form-control" aria-label="Sizing example input" id="emppayment"   aria-describedby="inputGroup-sizing-default"></span>
+          </div> 
+            
+    </div>
+</div>
+    </section>
+    <hr class="container">
+    <section class="container">
+        <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Salary : </span>
+                <span class="form-control" aria-label="Sizing example input" id="salary"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Regular Earnings : </span>
+                <span class="form-control" aria-label="Sizing example input" id="regular"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Over Time : </span>
+                <span class="form-control" aria-label="Sizing example input" id="overtime"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Incective pay : </span>
+                <span class="form-control" aria-label="Sizing example input" id="Incective"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Bonus : </span>
+                <span class="form-control" aria-label="Sizing example input" id="bonus"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Maintanance and Allowance : </span>
+                <span class="form-control" aria-label="Sizing example input" id="Maintanance"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Houe Rent Allowance : </span>
+                <span class="form-control" aria-label="Sizing example input" id="house"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Education Allowance : </span>
+                <span class="form-control" aria-label="Sizing example input" id="Education"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Car Allowance : </span>
+                <span class="form-control" aria-label="Sizing example input" id="car"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Other Allowance : </span>
+                <span class="form-control" aria-label="Sizing example input" id="Other"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Fuel : </span>
+                <span class="form-control" aria-label="Sizing example input" id="fuel"   aria-describedby="inputGroup-sizing-default"></span>
+              </div> 
+        </div>
+
+
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Provident Fund : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="provident"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">FedaralWithholding : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="fedaral"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">FedaralMED : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="fedaralmed"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">FedaralOSADI : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="Fedaral_OSADI"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">State Withholding : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="state"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Income Tax : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="income_tax"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Professional Tax : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="Professional"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Professional Loan : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="providentloan"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Advance Salary : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="Advance"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Other Deductions : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="other_deduction"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Total Deductions : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="total_deduction"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Net Salary : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="net_salary"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div>                                       
+              </div>                                  
+        </div>
+    </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+        <div class="p-3 mb-2 bg-black text-white">Payment Information for check</div>
+        <div class="col-lg-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Check Number : </span>
+                <span class="form-control" aria-label="Sizing example input" id="check"   aria-describedby="inputGroup-sizing-default"></span>
+              </div>                                       
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Name of Bank : </span>
+                <span class="form-control" aria-label="Sizing example input" id="bank"   aria-describedby="inputGroup-sizing-default"></span>
+              </div>                                       
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Check Date : </span>
+                <span class="form-control" aria-label="Sizing example input" id="date"   aria-describedby="inputGroup-sizing-default"></span>
+              </div>                                       
+        </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="p-3 mb-2 bg-black text-white">Payment Information for Bank Deposit/Transfer</div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Namw of Bank : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="nameofbank"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div>                                       
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Account Title : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="Accounttitle"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div>                                       
+    
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Account : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="Account"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div>                                       
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Transfer Date : </span>
+                    <span class="form-control" aria-label="Sizing example input" id="Transfer"   aria-describedby="inputGroup-sizing-default"></span>
+                  </div>                                       
+    
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./payslip.js"></script>
+    <script>
+        
+        var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.EmployeeUser;
+            document.getElementById("empuser").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.EmployeeAddress;
+            document.getElementById("empadd").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.EmployeeID;
+            document.getElementById("empuid").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.EmlloyeeContact;
+            document.getElementById("empcon").innerHTML=empname;
+
+            // -------------------------
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.EmployeeName;
+            document.getElementById("empname").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.SalaryDate;
+            document.getElementById("empdate").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.SSN  ;
+            document.getElementById("empssn").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.ModeofPayment;
+            document.getElementById("emppayment").innerHTML=empname;
+
+            // Earnings-------------------------------------------
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.TotalValue;
+            document.getElementById("salary").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.RegularSalary;
+            document.getElementById("regular").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.OverTime;
+            document.getElementById("overtime").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.IncectivePay;
+            document.getElementById("Incective").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Bonus;
+            document.getElementById("bonus").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.MaintainAllowance;
+            document.getElementById("Maintanance").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Houserent;
+            document.getElementById("house").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.EducationPay;
+            document.getElementById("Education").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.CarAllowance;
+            document.getElementById("car").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Other;
+            document.getElementById("Other").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Fuel;
+            document.getElementById("fuel").innerHTML=empname;
+
+ 
+            // Deduction--------------------
+
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Providentfund;
+            document.getElementById("provident").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.FedaralWithholding;
+            document.getElementById("fedaral").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.FedaralMED;
+            document.getElementById("fedaralmed").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.FedaralOSADI;
+            document.getElementById("Fedaral_OSADI").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Statewithholding;
+            document.getElementById("state").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Incometax;
+            document.getElementById("income_tax").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Professionaltax;
+            document.getElementById("Professional").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Professionalloan;
+            document.getElementById("providentloan").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Advancesalary;
+            document.getElementById("Advance").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Otherdeduction;
+            document.getElementById("other_deduction").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.TotalDeduction;
+            document.getElementById("total_deduction").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.NetSalary;
+            document.getElementById("net_salary").innerHTML=empname;
+
+// Banking Details-----------------
+
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Checknumber;
+            document.getElementById("check").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Nameofbank1;
+            document.getElementById("bank").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Checkdate;
+            document.getElementById("date").innerHTML=empname;
+
+
+
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Nameofbank;
+            document.getElementById("nameofbank").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Accounttitle;
+            document.getElementById("Accounttitle").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Account;
+            document.getElementById("Account").innerHTML=empname;
+
+            var payslip = localStorage.getItem('playslipJSON');
+            var payslip1 = JSON.parse(payslip);
+            var empname = payslip1.Transferdata;
+            document.getElementById("Transfer").innerHTML=empname;
+
+
+
+
+
+
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+</html>

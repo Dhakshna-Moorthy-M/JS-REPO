@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay slip</title>
+    <link rel="stylesheet" href="./payslip.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Company Name -->
+    <header>
+        <nav class="container">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-md">
+                  <a class="navbar-brand text-white" href="#">Dotexes</a>
+                </div>
+              </nav>
+        </nav>
+    </header>
+    <!-- Employee Details -->
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 " >
+            <div class="input-group mb-3  ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee Name </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="" id="employeevalue" >
+              </div> 
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee Address </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="employeeaddress" value="" aria-describedby="inputGroup-sizing-default">
+              </div> 
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee ID </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="employeeid" value="" aria-describedby="inputGroup-sizing-default">
+              </div> 
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee Contact </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="emlloyeecontact" aria-describedby="inputGroup-sizing-default">
+              </div> 
+            </div>
+            <div class="col-lg-6 " >
+
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Employee Name </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="employeename1" value="" aria-describedby="inputGroup-sizing-default">
+              </div> 
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Salary Date </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="salarydate" value="" aria-describedby="inputGroup-sizing-default">
+              </div> 
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">SSN </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="ssn" value="" aria-describedby="inputGroup-sizing-default">
+              </div> 
+              <div class="input-group mb-3  col-lg-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default">Mode of Payment</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="modeofpayment" value="" aria-describedby="inputGroup-sizing-default">
+              </div> 
+            </div>
+                </div>
+            </div>
+    </section>
+<!-- Earnings Side -->
+<section>
+              <div class="container">
+                <div class="row">
+                <div class="col-lg-6">
+                    <div class="p-3 mb-2 bg-black text-white">Earnings</div>  
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Total Earnings </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="total_value" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <hr>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Regular Earnings  </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="regular_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Over Time </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="overtime_earn" value="" onkeyup="totalSalary()"  aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Incective pay </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="incective_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> Bonus </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="bonus_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> Maintenance Allowance </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="maintanance_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> House Rent Allowance </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="houserent_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Education Allowance </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="education_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Car Allowance  </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="car_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Other Allowance </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="other_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Fuel </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="fuel_earn" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                      </div> 
+
+
+                 </div>
+<!-- Detection side -->
+
+                 <div class="col-lg-6">
+                    <div class="p-3 mb-2 bg-black text-white">Detuctions</div>               
+                 
+                 <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Provident Fund </span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="provident_fund" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">FedaralWithholding  </span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="fedaral_Withholding" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">FedaralMED </span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="Fedara_lMED" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">FedaralOSADI</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="Fedaral_OSADI" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">  State Withholding</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="state_withholding" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">   Income Tax</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="income_tax" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Professional Tax </span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="Professional_tax" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Personal Loan</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="Professional_loan" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">  Advance Salary</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="Advance_salary" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Other Deductions</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="other_deduction" value="" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <hr>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Total Deductions</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="total_deduction" value="" onkeyup="totalSalary()"  aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Net Salary</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="net_salary" value="" onkeyup="totalSalary()" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Payment Information for check -->
+<section>
+                <div class="container">
+                <div class="p-3 mb-2 bg-black text-white">Payment Information for check</div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Check Number</span>
+                            <input type="text" class="form-control" id="checknumber" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div> 
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Name of Bank</span>
+                            <input type="text" class="form-control" id="nameofbank" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                        </div>
+                          <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Check Date </span>
+                                <input type="text" class="form-control" id="checkdate" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                              </div> 
+                          </div>
+                    </div>
+      <!-- Payment Information for Bank Deposit/Transfer -->
+                <div class="p-3 mb-2 bg-black text-white">Payment Information for Bank Deposit/Transfer</div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Name of Bank</span>
+                            <input type="text" class="form-control" id="nameofBank" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div> 
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Account Title</span>
+                            <input type="text" class="form-control" id="Accounttitle" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                        </div>
+                          <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Account </span>
+                                <input type="text" class="form-control" id="Account" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                              </div> 
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Transfer Date </span>
+                                <input type="text" class="form-control" id="Transfer" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                              </div> 
+                          </div>
+                    </div>
+                </div>
+    </section>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-outline-secondary" type="button" onclick="printJSON()" target="_blank" >Print Employee Play slip</button>
+      </div>
+
+    <!-- <section>
+        <div class="container" >
+            <div class="col-4">
+                <label for="">Employee Name :</label>
+                <span id="employeename_stored"> </span>
+
+            </div>
+
+        </div>
+    </section> -->
+</body>
+<script src="./payslip.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</html>
